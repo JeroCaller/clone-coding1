@@ -61,11 +61,77 @@
             </section>
             <section id="theme"></section>
             <section id="board">
-                <div id="tab-menu"></div>
-                <div id="quick-link"></div>
+                <div id="tab-menu">
+                    <input type="radio" id="tab1" name="tabs" checked>
+                    <label for="tab1">공지사항</label>
+                    <input type="radio" id="tab2" name="tabs">
+                    <label for="tab2">갤러리</label>
+                    <div id="notice" class="tab-content">
+                        <h2>공지사항 내용입니다.</h2>
+                        <ul>
+                            <li>사무실을 이전했습니다.</li>
+                            <li>[참가 모집] 카약 체험에 초대합니다.</li>
+                            <li>[참가 모집] 여름 방학 기간, 오름 체험단을 모집합니다.</li>
+                            <li>겨울, 추천 여행지</li>
+                            <li>가을, 추천 여행지</li>
+                        </ul>
+                    </div>
+                    <div id="gallery" class="tab-content">
+                        <h2>갤러리 내용입니다.</h2>
+                        <ul>
+                            <li><img src="images/sailing-with-moon.png"></li>
+                            <li><img src="images/nightscape-in-city.png"></li>
+                            <li><img src="images/old-street.png"></li>
+                            <li><img src="images/scenery-around-house.png"></li>
+                            <li><img src="images/field.png"></li>
+                            <li><img src="images/sailing-with-moon.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="quick-link">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon1"></span>
+                                <p>평화 기행</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon2"></span>
+                                <p>힐링 워크숍</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon3"></span>
+                                <p>문의하기</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div id="bottom-menu">
+                <ul>
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <div id="sns">
+                    <ul>
+                        <li><a href="#"><img></a></li>
+                        <li><a href="#"><img></a></li>
+                        <li><a href="#"><img></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="company">
+                <p>XX도 XX시 XX로 111-111-111</p>
+            </div>
+        </footer>
     </div>
     <script src="js/slideshow.js"></script>
 </body>

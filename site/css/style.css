@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1510px;
+}
+
+/* header area */
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #07c;
+}
+
+#logo {
+    width: 900px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+#logo h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;  /* 그림자 색 */
+    text-align: center;
+}
+
+nav {
+    width: 900px;
+    height: 60px;
+    background-color: green;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#top-menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+#top-menu > li {
+    position: relative;
+}
+#top-menu > li > ul {
+    display: none;   /* 서브 메뉴를 처음에 감추기 위함. */
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.6);
+    left: 10%;
+    margin: 0;
+}
+#top-menu > li > ul > li {
+    padding: 10px 10px 10px 30px;
+}
+#top-menu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#top-menu > li:hover > ul {
+    display: block;  /* 메인 메뉴 위로 hover 시 서브 메뉴 표시 */
+    z-index: 10;  /* 아래 요소(이미지 슬라이드 쇼) 가리지 않도록 설정 */
+}
+#top-menu > li > ul > li > a:hover {
+    color: #f00;  /* 서브 메뉴 hover 시 색상 바꿔 현재 마우스 위치 표시 */
+}
+#top-menu > li > a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 10px 60px;
+}
+#top-menu > li > a:hover {
+    color: #000;
+    text-shadow: 0 -1px #07c;
+}
+/* ===== */
+
+/* main area */
+#image-slide {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;  /* 영역 넘치면 감춤 */
+    position: relative;
+}
+#slideshow {
+    position: absolute;
+}
+#slideshow > img {
+    width: 100%;
+    float: left;
+}
+#slideshow > button {
+    position: absolute;
+    height: 20%;
+    top: 0;
+    border: none;  /* 버튼 테두리 제거 */
+    padding: 20px;
+    background-color: transparent;  /* 투명 배경 지정 */
+    color: #000;
+    opacity: 0.5;  /* 화살표 반투명하게 */
+}
+#slideshow > button > span {
+    background-color: grey;
+    font-weight: 800;
+    font-size: 30px;
+}
+#prev {
+    left: 0;
+}
+#next {
+    right: 0;
+}
+#slideshow > button:hover {
+    background-color: #222;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+#slideshow > button:focus {
+    outline: 0;  /* 아웃라인 제거 */
+}
+
+#theme {
+    width: 100%;
+    height: 300px;
+    background-color: chartreuse;
+}
+
+#board {
+    width: 100%;
+    height: 290px;
+    display: flex;
+}
+
+#tab-menu {
+    width: 50%;
+    height: 100%;
+    background-color: violet;
+}
+
+#quick-link {
+    width: 50%;
+    height: 100%;
+    background-color: skyblue;
+}
+/* ===== */ 
+
+/* footer area */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+/* ===== */ 

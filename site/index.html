@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <h1>AI Gallery</h1>
+                </a>
+            </div>
+            <nav>
+                <ul id="top-menu">
+                    <li>
+                        <a href="#">
+                            단체 여행 
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </a>
+                        <ul>
+                            <li><a href="#">회사 연수</a></li>
+                            <li><a href="#">수학 여행</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            맞춤 여행 
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </a>
+                        <ul>
+                            <li><a href="#">4.3 평화 기행</a></li>
+                            <li><a href="#">곶자왈 체험</a></li>
+                            <li><a href="#">힐링 워크숍</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="image-slide">
+                <div id="slideshow">
+                    <img src="images/sailing-with-moon.png" alt="">
+                    <img src="images/nightscape-in-city.png" alt="">
+                    <img src="images/old-street.png" alt="">
+                    <img src="images/scenery-around-house.png" alt="">
+                    <img src="images/field.png" alt="">
+                    <button id="prev"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <button id="next"><span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </section>
+            <section id="theme"></section>
+            <section id="board">
+                <div id="tab-menu"></div>
+                <div id="quick-link"></div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

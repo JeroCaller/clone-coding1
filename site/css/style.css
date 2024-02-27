@@ -1,3 +1,4 @@
+/* 구글 폰트 지정 */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Play:wght@400;700&display=swap');
 
 * {
@@ -141,9 +142,70 @@ nav {
 }
 
 #theme {
-    width: 100%;
-    height: 300px;
-    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 270px;
+    overflow: hidden;
+}
+#quick-link {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+#quick-link button {
+    position: absolute;
+    height: 100%;
+    border: none;
+}
+#cate-prev {
+    left: 0;
+}
+#cate-next {
+    right: 0;
+    top: 0;
+}
+#quick-link ul {
+    height: 100%;
+    overflow: hidden;  /* 넘어가는 항목은 감춤 */ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+}
+#quick-link ul li a span {
+    display: block;
+    margin: 0 auto;  /* 가운데 배치 */
+    /* 이미지를 원형으로 표현하기 위한 스타일 코드 */
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    /* === */
+    border: 1px solid #ddd;
+    line-height: 150px;
+    background-size: cover;
+}
+#quick-link ul li a p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+#quick-icon1 {
+    background-image: url('../images/tank.jpeg');
+}
+#quick-icon2 {
+    background-image: url('../images/coffee.png');
+}
+#quick-icon3 {
+    background-image: url('../images/cake.png');
+}
+#quick-icon4 {
+    background-image: url('../images/spaceman.jpg');
+}
+#quick-icon5 {
+    background-image: url('../images/field.png');
 }
 
 #board {
@@ -154,7 +216,7 @@ nav {
 }
 
 #tab-menu {
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin-top: 10px;
 }
@@ -200,6 +262,9 @@ nav {
     font-size: 16px;
     line-height: 2.5;
 }
+#notice ul li:hover {
+    background-color: dodgerblue;
+}
 #gallery ul li {
     display: inline;
 }
@@ -213,47 +278,6 @@ nav {
     display: block;
 }
 
-#quick-link {
-    width: 50%;
-    height: 100%;
-    margin-top: 15px;
-}
-#quick-link ul {
-    padding: 0;
-    overflow: hidden;  /* 넘어가는 항목은 감춤 */ 
-}
-#quick-link ul li {
-    float: left;
-    width: 33%;  /* 세 항목 영역 간격을 동일하게 설정 */
-    text-align: center;
-    margin: 10px 0;
-}
-#quick-link ul li a span {
-    display: block;
-    margin: 0 auto;  /* 가운데 배치 */
-    /* 이미지를 원형으로 표현하기 위한 스타일 코드 */
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    /* === */
-    border: 1px solid #ddd;
-    line-height: 150px;
-    background-size: contain;
-}
-#quick-link ul li a p {
-    margin-top: 15px;
-    font-weight: 600;
-    color: #666;
-}
-#quick-icon1 {
-    background-image: url('../images/tank.jpeg');
-}
-#quick-icon2 {
-    background-image: url('../images/coffee.png');
-}
-#quick-icon3 {
-    background-image: url('../images/cake.png');
-}
 /* ===== */ 
 
 /* footer area */
@@ -284,24 +308,16 @@ footer {
 }
 #sns {
     position: absolute;
-    right: 0;
+    right: 3%;
+    top: 0;
 }
 #sns ul li {
     border: none;
     padding: 5px;
 }
 #sns > ul > li > a > img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
-#company {
-    clear: left;
-    margin-top: 25px;
-    margin-left: 20px;
-}
-p {
-    font-size: 14px;
-    color: #aaa;
-}
 /* ===== */ 

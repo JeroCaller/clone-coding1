@@ -19,31 +19,30 @@
                 <ul id="top-menu">
                     <li>
                         <a href="#">
-                            단체 여행 
+                            소개
                             <span class="material-symbols-outlined">
                                 arrow_drop_down
                             </span>
                         </a>
                         <ul>
-                            <li><a href="#">회사 연수</a></li>
-                            <li><a href="#">수학 여행</a></li>
+                            <li><a href="#">사이트 소개</a></li>
+                            <li><a href="#">그 외 정보</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">
-                            맞춤 여행 
+                            주제
                             <span class="material-symbols-outlined">
                                 arrow_drop_down
                             </span>
                         </a>
                         <ul>
-                            <li><a href="#">4.3 평화 기행</a></li>
-                            <li><a href="#">곶자왈 체험</a></li>
-                            <li><a href="#">힐링 워크숍</a></li>
+                            <li><a href="#">Life & Daily</a></li>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">Surreal</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">모두 보기</a></li>
                 </ul>
             </nav>
         </header>
@@ -59,25 +58,60 @@
                     <button id="next"><span class="material-symbols-outlined">chevron_right</span></button>
                 </div>
             </section>
-            <section id="theme"></section>
+            <section id="theme">
+                <div id="quick-link">
+                    <button id="cate-prev"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon1"></span>
+                                <p>Tank</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon2"></span>
+                                <p>Daily Life</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon3"></span>
+                                <p>Cook</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon4"></span>
+                                <p>Surreal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span id="quick-icon5"></span>
+                                <p>Nature</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <button id="cate-next"><span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </section>
             <section id="board">
                 <div id="tab-menu">
                     <input type="radio" id="tab1" name="tabs" checked>
-                    <label for="tab1">공지사항</label>
+                    <label for="tab1">ChatGPT의 말</label>
                     <input type="radio" id="tab2" name="tabs">
-                    <label for="tab2">갤러리</label>
+                    <label for="tab2">최신 업로드 그림</label>
                     <div id="notice" class="tab-content">
-                        <h2>공지사항 내용입니다.</h2>
                         <ul>
-                            <li>사무실을 이전했습니다.</li>
-                            <li>[참가 모집] 카약 체험에 초대합니다.</li>
-                            <li>[참가 모집] 여름 방학 기간, 오름 체험단을 모집합니다.</li>
-                            <li>겨울, 추천 여행지</li>
-                            <li>가을, 추천 여행지</li>
+                            <li><a href="#">AI Image</a></li>
+                            <li><a href="#">AI 이미지: 인공의 예술</a></li>
+                            <li><a href="#">컴퓨터의 상상력: AI가 그린 세상</a></li>
+                            <li><a href="#">디지털 예술의 새로운 풍경: AI 이미지의 탐구</a></li>
+                            <li><a href="#">알고리즘의 색채: AI가 그리는 다양한 조형과 색상</a></li>
                         </ul>
                     </div>
                     <div id="gallery" class="tab-content">
-                        <h2>갤러리 내용입니다.</h2>
                         <ul>
                             <li><img src="images/sailing-with-moon.png"></li>
                             <li><img src="images/nightscape-in-city.png"></li>
@@ -88,51 +122,24 @@
                         </ul>
                     </div>
                 </div>
-                <div id="quick-link">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span id="quick-icon1"></span>
-                                <p>평화 기행</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span id="quick-icon2"></span>
-                                <p>힐링 워크숍</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span id="quick-icon3"></span>
-                                <p>문의하기</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </section>
         </main>
         <footer>
             <div id="bottom-menu">
                 <ul>
-                    <li><a href="#">회사 소개</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">정보</a></li>
                     <li><a href="#">사이트맵</a></li>
                 </ul>
                 <div id="sns">
                     <ul>
                         <li><a href="#"><img src="images/jerocaller.png"></a></li>
-                        <li><a href="#"><img src="images/cake.png"></a></li>
-                        <li><a href="#"><img src="images/coffee.png"></a></li>
                     </ul>
                 </div>
-            </div>
-            <div id="company">
-                <p>XX도 XX시 XX로 111-111-111</p>
             </div>
         </footer>
     </div>
     <script src="js/slideshow.js"></script>
+    <script src="js/link-slide.js"></script>
 </body>
 </html>

@@ -9,7 +9,6 @@ showSlidesAuto();
 prev.onclick = prevSlide;
 next.onclick = nextSlide;
 
-
 function showSlides(n) {
     // 모든 이미지를 화면에서 감춘다.
     for (let imgElement of slides) {

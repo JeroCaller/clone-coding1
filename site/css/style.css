@@ -170,7 +170,7 @@ nav {
     height: 100%;
     overflow: hidden;  /* 넘어가는 항목은 감춤 */ 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: yellow;
 }
